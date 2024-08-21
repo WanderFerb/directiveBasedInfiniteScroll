@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { dataObj$ } from './data.model';
+
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrl: './app.component.scss',
+
 })
 export class AppComponent {
-  title = 'directiveBasedInfiniteScroll';
+  dataSignal = toSignal(dataObj$);
 }
