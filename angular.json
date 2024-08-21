@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "directiveBasedInfiniteScroll:build:production"
+              "buildTarget": "directiveBasedInfiniteScroll:build:production"
             },
             "development": {
-              "browserTarget": "directiveBasedInfiniteScroll:build:development"
+              "buildTarget": "directiveBasedInfiniteScroll:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "directiveBasedInfiniteScroll:build"
+            "buildTarget": "directiveBasedInfiniteScroll:build"
           }
         },
         "test": {
